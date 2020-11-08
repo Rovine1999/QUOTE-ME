@@ -14,7 +14,7 @@ export class QuoteComponent implements OnInit {
     {id:4,name:'Get Dog Food',description:'Pupper likes expensive sancks'},
     {id:5,name:'Solve math homework',description:'Damn Math'},
     {id:6,name:'Plot my world domination plan',description:'Cause I am an evil overlord'},
-  ]
+  ];
 
   constructor() { }
 
