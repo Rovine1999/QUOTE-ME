@@ -1,13 +1,8 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <app-quote></app-quote>
-    </div>
-    <div class="col-md-3">
-      <app-upvote></app-upvote>
-    </div>
-    <div class="col-md-6">
-      <app-downvote></app-downvote>
-    </div>
-  </div>
+<div>
+  <h1>My Quote</h1>
+  <ul>
+      <li *ngFor='let quote of quotes'>
+        {{quote}}
+      </li>
+  </ul>
 </div>
