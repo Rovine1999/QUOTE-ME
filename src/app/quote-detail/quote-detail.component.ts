@@ -9,6 +9,11 @@ import { Quote } from '../quote'
 export class QuoteDetailComponent implements OnInit {
 
   @Input() quote:Quote;
+
+  toggleDetails(index){
+    this.quote[index].showDescription = !this.quote[index].showDescription;
+  }
+
   constructor() { }
 
   ngOnInit(): void {
