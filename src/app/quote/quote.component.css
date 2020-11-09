@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+}
+
+#up {
+color: blue;
+border: none;
+}
+
+#down {
+    color: blue;
+    border: none;
+    margin-left: 30px;
+}
