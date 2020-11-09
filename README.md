@@ -14,6 +14,8 @@ click "Enter" on Windows or "Return" on Mac OSX
 4. Run ng test to execute the unit tests via Karma.
 5. Run ng e2e to execute the end-to-end tests via Protractor.
 
+To clone into the application use the link: https://github.com/Rovine1999/QUOTE-ME.git
+
 
 ## Known Bugs
 There are several bugs in the toppings section currently being corrected. If any other bug is discovered, please don't hesitate to contact me.
