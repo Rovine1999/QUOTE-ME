@@ -1,10 +1,27 @@
-<h1>My Quotes</h1>
+<div class="container">
+  <h1><b><u>My Quotes</u></b></h1>
 <hr>
-<ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}} due on {{quote.completeDate}}</li> 
-    <button (click)='toggleDetails(i)'>Toggle Details</button>
-    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+
+  <div class="row">
+<div class="col-md-3">
+
+  <ul>
+    <div *ngFor='let quote of quotes;let i = index'>
+      <li>{{quote.name}} due on {{quote.completeDate|date}}</li> 
+      <button (click)='toggleDetails(i)'>Toggle Details</button>
+      <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+    </div>
+  </ul>
+  
+</div>
+<div class="col-md-3">
+  
+</div>
+<div class="col-md-3">
+  
+</div>
   </div>
-</ul>
+</div>
+
+
 
