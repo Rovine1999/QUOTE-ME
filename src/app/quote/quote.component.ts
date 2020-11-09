@@ -8,12 +8,14 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   goals: Quote[] = [
-    new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
-    new Quote(2,'Buy Cookies','I have to buy cookies for the parrot',new Date(2019,6,9)),
-    new Quote(3,'Get new Phone Case','Diana has her birthday coming up soon',new Date(2022,1,12)),
-    new Quote(4,'Get Dog Food','Pupper likes expensive snacks',new Date(2019,0,18)),
-    new Quote(5,'Solve math homework','Damn Math',new Date(2019,2,14)),
-    new Quote(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2030,3,14)),
+    new Quote(1, 'Bob Marley', 'Love is sacrificing one\'s life.', 'Chekhov', new Date(2020, 5, 6)),
+    new Quote(2, 'Nelson Mandela', 'Man\'s life is brief, but yet there is no man who cannot boast\
+     that there have been terrible moments in his past.', 'Chekhov', new Date(2016, 5, 6)),
+    new Quote(3, 'Marting Luther King', "You can't have it all, all at once.", 'Ruth Ginsberg', new Date(2019, 5, 6)),
+    new Quote(4, 'Mugabe', "All happy families are alike; each unhappy family is unhappy in its own way.", ' Leo Tolstoy , Anna Karenina', new Date(2018, 5, 6)),
+    new Quote(5, 'Robert Mugabe', 'Most of the girls today can\'t jog for 5 mins and expect a guy to last for two hours.', 'Ruther', new Date(2010, 7, 6)),
+    new Quote(6, 'Robert Mugabe', 'If you are ugly, you are ugly. Stop talking about inner beauty because  men don\'t walk around with X-rays to see inner beauty.', 'Luciano', new Date(2011, 9, 2))
+
   ];
   quotes: any;
   toggleDetails(index){
