@@ -3,7 +3,7 @@
 ## Description
 Application that allows users to view, upvote, downvote, add and delete quotes.
 ## Setup/Installation Requirements
-1. Open the browser and type ...........
+1. Open the browser and paste the link:  https://rovine1999.github.io/QUOTE-ME/
 click "Enter" on Windows or "Return" on Mac OSX
 2. The website should then load.
 3. To run the code locally, follow the steps below:
