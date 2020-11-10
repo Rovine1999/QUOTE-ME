@@ -15,7 +15,13 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'Robert Mugabe', 'Nothing makes a woman more confused than being in a relation with a broke man who is extremely good in bed', 'Rovine Wanjala', new Date(2010, 7,7)),
     new Quote(6, 'Robert Mugabe', 'Sometimes you look back at girls you spent money on, rather than send it to your Mom and you realise witchcraft is real', 'Ruthov', new Date(2011, 4, 5)),
   ];
-
+  
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
   like(index){
     this.quotes[index].like++;
   }
