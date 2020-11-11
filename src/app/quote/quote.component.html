@@ -6,9 +6,10 @@
     <div class="col-md-6">
       <div *ngFor='let quote of quotes;let i = index'>
         <div class="border mt-3 p-3">
-          <h6 id={{i}}>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h6>
+          <h6 id={{i}}>{{quote.name}}</h6>
           <button (click)='toggleDetails(i)' class="btn btn-danger">Toggle Details</button>
         </div>
+        <p>Published: {{quote.completeDate | dateAgo}}</p>
         <button (click)='like(i)' id="up"><a><i class="fas fa-thumbs-up" ></i></a>{{quote.like}}</button>
         <button (click)='unlike(i)' id="down"><a><i class="fas fa-thumbs-down" ></i></a>{{quote.unlike}}</button>
 

@@ -1,4 +1,5 @@
 <p>{{quote.description}}</p>
-<p>This quote was published {{quote.completeDate|dateCount}} days ago.</p>
+<p>This quote was published on {{quote.completeDate|date}}</p>
+<p>Published: {{quote. completeDate| dateAgo}}</p>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button> 
 
